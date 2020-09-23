@@ -19,9 +19,9 @@ For this module's final project, I have the choice of the study:
 
 - Image Classification with Deep Learning
 
-I pick up chest x-ray image classification problem as my project, and I plan to tackle it by means of deep learning, because I consider `Portfolio Depth`.
+I pick up one chest x-ray image classification problem as my project, and I plan to tackle it by means of deep learning, because I consider `Portfolio Depth`.
 
-This chosen option will allow myself to practice the necessary skills in a group of settings, before diving into my individual projects with an emphasis on the computer vision. I will produce a couple of capstone projects that are *not only* more polished and sophisticated, *but also* my portfolio will demonstrate even more breadth by **constructing various deep learning models that are in applicable use to tacle both the time and labor consumption issues arrising from the hospital workflow**. A series of computer-vision-focused projects following after solving this image classification problem would be (1) [image caption generator](https://github.com/renjmindy/AutomaticImageCaptionGenerator) and (2) [image detectors](https://github.com/renjmindy/ImageDetectors) as well.
+This chosen option will allow myself to practice all the necessary skills in a group of settings, before diving into my individual projects with an emphasis on the `computer vision`. I will produce a couple of capstone projects that are *not only* more polished and sophisticated, *but also* my portfolio will demonstrate even more breadth by **constructing various deep learning models that are in applicable use in order to greatly reduce both the time and labor consumption arrising from the workflow of diagnosis in hospitals**. A series of computer-vision-focused projects following after solving this image classification problem would be (1) [image caption generator](https://github.com/renjmindy/AutomaticImageCaptionGenerator) and (2) [image detectors](https://github.com/renjmindy/ImageDetectors) as well. They will be addressed in great details at links as indicated above.
 
 Through this project, I will: 
 
