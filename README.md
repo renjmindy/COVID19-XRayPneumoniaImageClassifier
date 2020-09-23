@@ -7,7 +7,7 @@
 
 ## Motivation
 
-The `computer vision` possesses a broad range of applications in use for a great variety of domains, one of which is the health-care related medical industry.
+The `computer vision` possesses a broad range of applications in use for a great variety of domains, one of which is the healthcare-related medical industry. Artificial intelligence is now transforming healthcare. Besides computer vision, AI healthcare companies make good use of traditional machine learning algorithms and natural language processing as the cutting-edge tool-kits with greatest potential so as to explore everything ranging from drug chemistry to generic markers. For customer services, these companies are offering online consultants with predictive analytics, and meanwhile, they are incorporating test results and sensor data gathered from current patients in order to provide more and more real-time status updates to medical practitioners. As mentioned previously, the most exciting areas for AI in healthcare, are around `computer vision` and `natural language processing`. Here, there are four vivid examples demonstrating how both of them benefit healthcare. (1) [cancer screening](https://www.youtube.com/watch?v=XLb0xUe80uo&feature=emb_title) with computer vision; (2) [facilitating both onsite and remote diagnosis]()
 
 ## Introduction
 
