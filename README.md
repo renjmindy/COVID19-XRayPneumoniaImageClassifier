@@ -71,14 +71,14 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
     
 ## Tuning Models for the Optimization of Chosen Metrics:
 
-- Augmentation:
+- Augmentation: see below
 - Early stopping: through varying epochs, the first point at which the local minimal loss appears can be identified.  
 - Trainging optimizers: RMSprop is applied
 - Regularizers: the addition of first- and second-order regularization terms into the cost function to smoothen the variation of both cost and accuracy with time
-- Dropout:
+- Dropout: see below
 - Activation functions: RELU is applied
-- Batch size:
-- Learning rate:
+- Batch size: see below
+- Learning rate: see below
 
 ## Comparison of Model Performances:
 
@@ -89,7 +89,7 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
 |   CNN  | 150      | 40       | 100      |  N             | N          |  1e-4              |  N            |  0.0283    |  0.1335   |  0.9917     |  0.9641     |
 |   CNN  | 150      | 100      | 100      |  N             | N          |  1e-4              |  Y (20% data) |  0.2311    |  0.7139   |  0.8750     |  0.7500     |
 |   CNN  | 150      | 100      | 100      |  N             | N          |  2e-5              |  Y (20% data) |  0.2967    |  0.7139   |  0.8840     |  0.7500     |
-|   CNN  | 210      | 40       | 100      |  N             | Y (5% drop)|  2e-5              |  N            |  0.1282    |  0.1137   |  0.9558     |  0.9641     |
+|   CNN  | 210      | 40       | 100      |  N             | Y (5%)     |  2e-5              |  N            |  0.1282    |  0.1137   |  0.9558     |  0.9641     |
 |   CNN  | 210      | 100      | 100      |  early stopping| N          |  2e-5              |  N            |**0.0706**  |**0.0801** |**0.9755**   |**0.9744**   |
 |   CNN  | 210      | 40       | 100      |  L1 (5e-7)     | N          |  2e-5              |  N            |  0.1227    |  0.0879   |  0.9580     |  0.9726     |
 |   CNN  | 210      | 40       | 100      |  L2 (5e-7)     | N          |  2e-5              |  N            |**0.0925**  |**0.0780** |**0.9661**   |**0.9726**   |
