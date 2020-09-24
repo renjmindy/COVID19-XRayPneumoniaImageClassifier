@@ -49,7 +49,13 @@ This task is to:
 
         Build a model that can classify whether a given patient has pneumonia, given a chest x-ray image.
 
-To speed up image
+To speed up image pre-processing, 1024x1024 images were downsized to be either 150x150 or 210x210. All images are categorized into two groups: `NORMAL` and `PNEUMONIA`.     
+
+| Data                  | Normal    | Pneumonia    | Sum      |
+| :------------------:  | :------:  | :------:     | :------: | 
+| Training Set          |           |              |          |               
+| Testing Set           |           |              |          |                          
+| Validating Set        |           |              |          |                | 
 
 ## Loading Models for Visualizing Intermediate Activations of every Deep Learning Model
 
