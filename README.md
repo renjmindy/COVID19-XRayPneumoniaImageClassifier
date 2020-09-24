@@ -1,9 +1,9 @@
 # Diagnosis of COVID-19 alike Viral Pneumonia: 
 ## Building CNN from Scratch for Pneumonia Diagnosis by Classifying Chest X-Ray Images
 
-![simpsonXray](https://github.com/renjmindy/dsc-mod-4-project-v2-1-onl01-dtsc-ft-052620/blob/master/images/maxresdefault1.jpg)
+![simpsonXray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/maxresdefault1.jpg)
 
-![simpsonXray](https://github.com/renjmindy/dsc-mod-4-project-v2-1-onl01-dtsc-ft-052620/blob/master/images/maxresdefault2.jpg)
+![simpsonXray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/maxresdefault2.jpg)
 
 ## Motivation
 
@@ -97,3 +97,7 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
 | VGG19  | 150      | 100      | 25       |  N             | N          |  2e-5              |  Y (20% data) |  0.0479   |  0.2306  |  99.40      |  92.00      | 
 
 ## Conclusions:
+
+![summary](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/CNN_accuracy_summary.png)
+
+![summary](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/CNN_loss_summary.png)
