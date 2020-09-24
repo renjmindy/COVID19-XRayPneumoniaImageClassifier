@@ -65,6 +65,7 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
     
 ## Tuning Models for the Optimization of Chosen Metrics:
 
+- Augmentation:
 - Early stopping: through varying epochs, the first point at which the local minimal loss appears can be identified.  
 - Trainging optimizers: 
 - Regularizers: the addition of first- and second-order regularization terms into the cost function to smoothen the variation of both cost and accuracy with time
@@ -75,9 +76,11 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
 
 ## Comparison of Model Performances:
 
- | MODEL     | pixel    | epoch    | batch    | Regularization | Dropout    | Learning Rate | Traing/Loss  | Testing/Loss | Training/Accuracy | Testing/Accuracy |
- | :------:  | :------: | :------: | :------: | :----------:   | :-------:  | :----------:  | :----------: | :----------: | :----------:      | :----------:     |
- |    MLP    | 150      |          |          |                |            |               |              |              |                   |                  |
- |    MLP    | 210      |          |          |                |            |               |              |              |                   |                  |
+| MODEL  | pixel    | epoch    | batch    | Regularization | Dropout    | Learning Rate | Augmentation  | Loss  | Loss  | Accuracy | Accuracy |
+| :---:  | :------: | :------: | :------: | :----------:   | :-------:  | :----------:  | :-----------: | :---: | :---: | :------: | :------: |
+|        |          |          |          |                |            |               |               | Train | Test  | Train    | Test     |
+| :---:  | :------: | :------: | :------: | :----------:   | :-------:  | :----------:  |               | :---: | :---: | :------: | :------: |
+|   MLP  | 150      |          |          |                |            |               |               |       |       |          |          |
+|   MLP  | 210      |          |          |                |            |               |               |       |       |          |          |
 
 ## Conclusions:
