@@ -53,9 +53,9 @@ To speed up image pre-processing, 1024x1024 images were downsized to be either 1
 
 | Data                  | Normal    | Pneumonia    | Sum      |
 | :------------------:  | :------:  | :------:     | :------: | 
-| Training Set          |           |              |          |               
-| Testing Set           |           |              |          |                          
-| Validating Set        |           |              |          |                | 
+| Training Set          |           |              |   4685   |               
+| Testing Set           |           |              |    585   |                          
+| Validating Set        |           |              |    585   |  
 
 ## Loading Models for Visualizing Intermediate Activations of every Deep Learning Model
 
@@ -73,10 +73,10 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
 
 - Augmentation:
 - Early stopping: through varying epochs, the first point at which the local minimal loss appears can be identified.  
-- Trainging optimizers: 
+- Trainging optimizers: RMSprop is applied
 - Regularizers: the addition of first- and second-order regularization terms into the cost function to smoothen the variation of both cost and accuracy with time
 - Dropout:
-- Activation functions:
+- Activation functions: RELU is applied
 - Batch size:
 - Learning rate:
 
@@ -85,7 +85,15 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
 | MODEL  | pixel    | epoch    | batch    | Regularization | Dropout    | Learning Rate      | Augmentation  | Loss       | Loss      | Accuracy    | Accuracy    |
 | :---:  | :------: | :------: | :------: | :----------:   | :-------:  | :---------------:  | :-----------: | :--------: | :-------: | :---------: | :---------: |
 |        |          |          |          |                |            |                    |               | Training   | Testing   | Training    | Testing     |
-|   MLP  | 150      |          |          |                |            |                    |               |            |           |             |             |
-|   MLP  | 210      |          |          |                |            |                    |               |            |           |             |             |
+|   MLP  | 150      | 40       | 100      |  N             | N          |  1e-4              |  N            |  0.2137    |  0.1858   |  0.9311     |  0.9470     |
+|   CNN  | 150      | 40       | 100      |  N             | N          |  1e-4              |  N            |  0.0283    |  0.1335   |  0.9917     |  0.9641     |
+|   CNN  | 150      | 100      | 100      |  N             | N          |  1e-4              |  Y (20% data) |  0.2311    |  0.7139   |  0.8750     |  0.7500     |
+|   CNN  | 150      | 100      | 100      |  N             | N          |  2e-5              |  Y (20% data) |  0.2967    |  0.7139   |  0.8840     |  0.7500     |
+|   CNN  | 210      | 40       | 100      |  N             | Y (5% drop)|  2e-5              |  N            |  0.1282    |  0.1137   |  0.9558     |  0.9641     |
+|   CNN  | 210      | 100      | 100      |  early stopping| N          |  2e-5              |  N            |**0.0706**  |**0.0801** |**0.9755**   |**0.9744**   |
+|   CNN  | 210      | 40       | 100      |  L1 (5e-7)     | N          |  2e-5              |  N            |  0.1227    |  0.0879   |  0.9580     |  0.9726     |
+|   CNN  | 210      | 40       | 100      |  L2 (5e-7)     | N          |  2e-5              |  N            |**0.0925**  |**0.0780** |**0.9661**   |**0.9726**   |
+| VGG19  | 150      | 100      | 5        |  N             | N          |  1e-4              |  N            |  0.0057    |  0.6018   |  0.9991     |  0.9429     |
+| VGG19  | 150      | 100      | 25       |  N             | N          |  2e-5              |  Y (20% data) |  0.0479    |  0.2306   |  0.9940     |  0.9200     | 
 
 ## Conclusions:
