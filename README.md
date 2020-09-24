@@ -41,7 +41,7 @@ Through this project, I will:
 
 The data for this project concerns lung xray images for pneumonia. The original dataset is from Kaggle. I have downloaded the entire dataset for the sake of model training in order to design various architectures and evaluate their performaces as well by fitting to data. 
 ⏰  
-It is anticipated that this process will take approximately hours (even overnight) to run on a standard machine, although times will vary depending on every individual's particular computer and set up. For your reference, downsampled dataset can be found in a subdirectory, **data**, of this repository. 
+It is anticipated that this process will take approximately hours (even overnight) to run on a standard machine, although times will vary depending on every individual's particular computer and set up. 
 
 To build a deep neural network that trains on a large dataset for classification is a non-trivial task. In this case, I utilize x-ray images of pediatric patients in order to identify whether or not they have pneumonia. The entire dataset comes from Kermany et al. on [Mendeley](https://data.mendeley.com/datasets/rscbjbr9sj/3), although there is also a version on [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) that may be easier to use.
 
@@ -61,7 +61,7 @@ To speed up image pre-processing, 1024x1024 images were downsized to be either 1
 
 Deep learning is extremely powerful and is helping to lead the advancement of many AI tasks. That said, deep learning is often criticized for having a lot of black box algorithms in that the components of the model itself are difficult to interpret. In the case of CNNs and image recognition, this is actually not true at all! In this lesson, you will explore how you can visualize the intermediate hidden layers within your CNN to uncover what sorts of features your deep network is uncovering through some of the various filters. With that, you'll gain interesting insights and knowledge as to how your CNN is seeing the world. 
 
-Now that my own CNN has been built so that the visualization of feature maps is able to be seen. It's time to load pretrained models from files and visualize learned features systematically. Here, I'll succinctly visualize all the channels from each layer in a CNN. Saved models such as `'chest_xray_all_data.h5'` and `***.h5` are uploaded to one subdirectory, **models**, of this repository. All of these saved model files include both the model architecture and the trained weights. See the `model.save()` method for further details. These models were built in order to help identify patients with pneumonia. Start simply by loading them and pulling up a summary of the layers from each given pre-trained model. (To load the model use the `keras.models.load_model()` function.) 
+Now that my own CNN has been built so that the visualization of feature maps is able to be seen. It's time to load pretrained models from files and visualize learned features systematically. Here, I'll succinctly visualize all the channels from each layer in a CNN. All of saved model files include both the model architecture and the trained weights. See the `model.save()` method for further details. These models were built in order to help identify patients with pneumonia. Start simply by loading them and pulling up a summary of the layers from each given pre-trained model. (To load the model use the `keras.models.load_model()` function.) 
 
 ## Loading Pretrained Models
 
