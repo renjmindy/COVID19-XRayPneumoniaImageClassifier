@@ -75,4 +75,9 @@ In this lesson, you'll start to investigate how to use pretrained networks. Reca
 
 ## Comparison of Model Performances:
 
+ | MODEL     | pixel    | epoch    | batch    | Regularization | Dropout    | Learning Rate | Traing/Loss  | Testing/Loss | Training/Accuracy | Testing/Accuracy |
+ | :------:  | :------: | :------: | :------: | :----------:   | :-------:  | :----------:  | :----------: | :----------: | :----------:      | :----------:     |
+ |    MLP    | 150      |          |          |                |            |               |              |              |                   |                  |
+ |    MLP    | 210      |          |          |                |            |               |              |              |                   |                  |
+
 ## Conclusions:
