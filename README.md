@@ -1,109 +1,74 @@
-# Diagnosis of COVID-19 alike Viral Pneumonia: 
-## Building CNN from Scratch for Pneumonia Diagnosis by Classifying Chest X-Ray Images
+# Project name
 
-![simpsonXray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/maxresdefault1.jpg)
+<!--- These are examples. See https://shields.io for others or to customize this set of shields. You might want to include dependencies, project status and licence info here --->
+![GitHub repo size](https://img.shields.io/github/repo-size/scottydocs/README-template.md)
+![GitHub contributors](https://img.shields.io/github/contributors/scottydocs/README-template.md)
+![GitHub stars](https://img.shields.io/github/stars/scottydocs/README-template.md?style=social)
+![GitHub forks](https://img.shields.io/github/forks/scottydocs/README-template.md?style=social)
+![Twitter Follow](https://img.shields.io/twitter/follow/scottydocs?style=social)
 
-![simpsonXray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/maxresdefault2.jpg)
+Project name is a `<utility/tool/feature>` that allows `<insert_target_audience>` to do `<action/task_it_does>`.
 
-## Motivation
+Additional line of information text about what the project does. Your introduction should be around 2 or 3 sentences. Don't go overboard, people won't read it.
 
-The `computer vision` possesses a broad range of applications in use for a great variety of domains, one of which is the healthcare-related medical industry. Artificial intelligence is now transforming healthcare. Besides computer vision, AI healthcare companies make good use of traditional machine learning algorithms and natural language processing as the cutting-edge tool-kits with greatest potential so as to explore everything ranging from drug chemistry to generic markers. For customer services, these companies are offering online consultants with predictive analytics, and meanwhile, they are incorporating test results and sensor data gathered from current patients in order to provide more and more real-time status updates to medical practitioners. As mentioned previously, the most exciting areas for AI in healthcare, are around `computer vision` and `natural language processing`. Here, there are four vivid examples demonstrating how both of them benefit healthcare. (1) [cancer screening](https://www.youtube.com/watch?v=XLb0xUe80uo&feature=emb_title) with computer vision; (2) [facilitating both onsite and remote diagnosis](https://www.babylonhealth.com/us) with computer vision and natural language processing; (3) [accelerated research for medical device manufacturers and drug companies](https://www.benevolent.com/) with computer vision and natural language processing; (4) [surgical simulation](https://www.touchsurgery.com/) with computer vision.
+## Prerequisites
 
-## Introduction
+Before you begin, ensure you have met the following requirements:
+<!--- These are just example requirements. Add, duplicate or remove as required --->
+* You have installed the latest version of `<coding_language/dependency/requirement_1>`
+* You have a `<Windows/Linux/Mac>` machine. State which OS is supported/which is not.
+* You have read `<guide/link/documentation_related_to_project>`.
 
-Now that I have possessed background knowledge regarding how CNNs work and how to build them using Keras, its time to make good use of those skills a little more independently in order to build a CNN from scratch on my own in order to solve an image recognition problem. In this project, I'll conduct building an image classifier from the most beginning through developing CNN models where overfitting issues are resolved by employing regularizations to the end.  
+## Installing <project_name>
 
-## Objectives
+To install <project_name>, follow these steps:
 
-For this module's final project, I have the choice of the study:
+Linux and macOS:
+```
+<install_command>
+```
 
-- Image Classification with Deep Learning
+Windows:
+```
+<install_command>
+```
+## Using <project_name>
 
-I pick up one chest x-ray image classification problem as my project, and I plan to tackle it by means of deep learning, because I consider `Portfolio Depth`.
+To use <project_name>, follow these steps:
 
-This chosen option will allow myself to practice all the necessary skills in a group of settings, before diving into my individual projects with an emphasis on the `computer vision`. I will produce a couple of capstone projects that are *not only* more polished and sophisticated, *but also* my portfolio will demonstrate even more breadth by **constructing various deep learning models that are in applicable use in order to greatly reduce both the time and labor consumption arrising from the workflow of diagnosis in hospitals**. A series of computer-vision-focused projects following after solving this image classification problem would be (1) [image caption generator](https://github.com/renjmindy/AutomaticImageCaptionGenerator) and (2) [image detectors](https://github.com/renjmindy/ImageDetectors) as well. They will be addressed in great details at links as indicated above.
+```
+<usage_example>
+```
 
-Through this project, I will: 
+Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
 
-- Load images from a hierarchical file structure using an image datagenerator 
-- Apply data augmentation to image files before training a neural network 
-- Build a CNN using Keras 
-- Visualize and evaluate the performance of CNN models 
-- Load saved Keras models 
-- Use Keras methods to visualize activation functions in CNNs 
-- Take advantage of pretrained networks
-- Study how pre-trained neural networks benefit feature extraction 
-- Understand what "freezing" and "unfreezing" a layer means in a neural network 
-- Implement feature engineering and fine tuning on a pre-trained model 
-- Use Keras to adapt a pretrained CNN 
+## Contributing to <project_name>
+<!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
+To contribute to <project_name>, follow these steps:
 
-## Loading Data for Image Classification with Deep Learning
+1. Fork this repository.
+2. Create a branch: `git checkout -b <branch_name>`.
+3. Make your changes and commit them: `git commit -m '<commit_message>'`
+4. Push to the original branch: `git push origin <project_name>/<location>`
+5. Create the pull request.
 
-The data for this project concerns lung xray images for pneumonia. The original dataset is from Kaggle. I have downloaded the entire dataset for the sake of model training in order to design various architectures and evaluate their performaces as well by fitting to data. 
-⏰  
-It is anticipated that this process will take approximately hours (even overnight) to run on a standard machine, although times will vary depending on every individual's particular computer and set up. 
+Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-To build a deep neural network that trains on a large dataset for classification is a non-trivial task. In this case, I utilize x-ray images of pediatric patients in order to identify whether or not they have pneumonia. The entire dataset comes from Kermany et al. on [Mendeley](https://data.mendeley.com/datasets/rscbjbr9sj/3), although there is also a version on [Kaggle](https://www.kaggle.com/paultimothymooney/chest-xray-pneumonia) that may be easier to use.
+## Contributors
 
-This task is to:
+Thanks to the following people who have contributed to this project:
 
-        Build a model that can classify whether a given patient has pneumonia, given a chest x-ray image.
+* [@scottydocs](https://github.com/scottydocs) 📖
+* [@cainwatson](https://github.com/cainwatson) 🐛
+* [@calchuchesta](https://github.com/calchuchesta) 🐛
 
-To speed up image pre-processing, 1024x1024 images were downsized to be either 150x150 or 210x210. All images are categorized into two groups: `NORMAL` and `PNEUMONIA`.     
+You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
 
-| Data                  | Normal    | Pneumonia    | Sum      |
-| :------------------:  | :------:  | :------:     | :------: | 
-| Training Set          | 0.73      | 0.27         |   4685   |               
-| Testing Set           | 0.73      | 0.27         |    585   |                          
-| Validating Set        | 0.73      | 0.27         |    585   |  
+## Contact
 
-## Loading Models for Visualizing Intermediate Activations of every Deep Learning Model
+If you want to contact me you can reach me at <your_email@address.com>.
 
-Deep learning is extremely powerful and is helping to lead the advancement of many AI tasks. That said, deep learning is often criticized for having a lot of black box algorithms in that the components of the model itself are difficult to interpret. In the case of CNNs and image recognition, this is actually not true at all! In this lesson, you will explore how you can visualize the intermediate hidden layers within your CNN to uncover what sorts of features your deep network is uncovering through some of the various filters. With that, you'll gain interesting insights and knowledge as to how your CNN is seeing the world. 
+## License
+<!--- If you're not sure which open license to use see https://choosealicense.com/--->
 
-Now that my own CNN has been built so that the visualization of feature maps is able to be seen. It's time to load pretrained models from files and visualize learned features systematically. Here, I'll succinctly visualize all the channels from each layer in a CNN. All of saved model files include both the model architecture and the trained weights. See the `model.save()` method for further details. These models were built in order to help identify patients with pneumonia. Start simply by loading them and pulling up a summary of the layers from each given pre-trained model. (To load the model use the `keras.models.load_model()` function.) 
-
-## Loading Pretrained Models
-
-In this lesson, you'll start to investigate how to use pretrained networks. Recall that when training neural networks, the model is tuning a huge number of weights: several to dozens at each individual layer. Often the largest limiting factor with these models is the quality and size of the training data you have at hand. As such, adapting a pretrained model from a similar problem context that was trained on a larger dataset can lead to stronger overall models when you have limited training data. For example, in image recognition, the VGG-19 network is commonly used to improve the model performance of CNNs with limited training data. VGG-19 was trained on the ImageNet dataset which contains approximately 1.2 million images. Since the initial bottom layers of a CNN pick up small details with later layers picking up larger and larger features, the initial layers of a well trained network are applicable to other problem domains. Similar pretrained networks exist for other domains such as natural language processing as well. With that, let's take a further look at how transfer learning works in detail.
-
-    Pretrained models are adapted for classifying `PNEUMONIA` or `NORMAL` problem scenario that I've worked on so far!
-    
-## Tuning Models for the Optimization of Chosen Metrics:
-
-- Augmentation: see below
-- Early stopping: through varying epochs, the first point at which the local minimal loss appears can be identified.  
-- Trainging optimizers: RMSprop is applied
-- Regularizers: the addition of first- and second-order regularization terms into the cost function to smoothen the variation of both cost and accuracy with time
-- Dropout: see below
-- Activation functions: RELU is applied
-- Batch size: see below
-- Learning rate: see below
-
-## Comparison of Model Performances:
-
-| MODEL  | pixel    | epoch    | batch    | Regularization | Dropout    | Learning Rate      | Augmentation  | Loss      | Loss     | Accuracy [%]| Accuracy [%]|
-| :---:  | :------: | :------: | :------: | :----------:   | :-------:  | :---------------:  | :-----------: | :--------:| :-------:| :---------: | :---------: |
-|        |          |          |          |                |            |                    |               | Training  | Testing  | Training    | Testing     |
-|   MLP  | 150      | 40       | 100      |  N             | N          |  1e-4              |  N            |  0.2137   |  0.1858  |  93.11      |  94.70      |
-|   CNN  | 150      | 40       | 100      |  N             | N          |  1e-4              |  N            |  0.0283   |  0.1335  |  99.17      |  96.41      |
-|   CNN  | 150      | 100      | 100      |  N             | N          |  2e-5              |  Y (20% data) |  0.2967   |  0.7139  |  88.40      |  75.00      |
-|   CNN  | 210      | 40       | 100      |  N             | Y (5%)     |  2e-5              |  N            |  0.1282   |  0.1137  |  95.58      |  96.41      |
-|   CNN  | 210      | 100      | 100      |  early stopping| N          |  2e-5              |  N            |**0.0706** |**0.0801**|**97.55**    |**97.44**    |
-|   CNN  | 210      | 40       | 100      |  L1 (5e-7)     | N          |  2e-5              |  N            |  0.1227   |  0.0879  |  95.80      |  97.26      |
-|   CNN  | 210      | 40       | 100      |  L2 (5e-7)     | N          |  2e-5              |  N            |**0.0925** |**0.0780**|**96.61**    |**97.26**    |
-| VGG19  | 150      | 100      | 5        |  N             | N          |  1e-4              |  N            |  0.0057   |  0.6018  |  99.91      |  94.29      |
-| VGG19  | 150      | 100      | 25       |  N             | N          |  2e-5              |  Y (20% data) |  0.0479   |  0.2306  |  99.40      |  92.00      | 
-
-## Conclusions:
-
-- image size: the bigger; the better. the loss drops 50%.
-- data size: the more; the better. both the accuracy and loss get worse with only 20% of actual data, mixed with another 80% generated by distorting this 20% of image data in various manners such as rotation (40degrees), shift in width, shift in height, sheared, zoomed and flipped horizontally.
-- L1/L2 regularization effects: they reduce the wiggling, so that the loss curve gets smoothier. 
-- early stopping: prior to introducing L1/L2 regularization, the early stopping will be the first recommendaton to help with resolving the over-fitting problem.
-- pre-trained model: feature extraction approach is not recommended because of the existance of very obvious over-fiiting problesm. that being said, mounting the entire frozen, pretrained CNN model with a flattened, dense layer along with one classifier is the best way to reduce the overall time consumption of model training. To avoid the over-fitting, we can employ the early stopping techinique in the model training process.
-- learning rate: the smaller; the better. the learning rate is analogical to the step size. smaller step size indicates the finer variation in neuron weights assigned for every single layer.
-
-![summary](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/CNN_accuracy_summary.png)
-
-![summary](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/CNN_loss_summary.png)
+This project uses the following license: [<license_name>](<link>).
