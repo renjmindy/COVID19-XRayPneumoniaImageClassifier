@@ -74,7 +74,15 @@ To use <project_name>, follow these steps:
 - data exploration/descriptive statistics
 - data processing/cleaning
 - statistical modeling
+
+![xray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/Xray_1.png)
+![xray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/Xray_2.png)
+
 - writeup/reporting
+
+![xray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/Xray_3.png)
+![xray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/Xray_4.png)
+
 - etc. (be as specific as possible)
 
 ## Featured Notebooks/Analysis/Deliverables
