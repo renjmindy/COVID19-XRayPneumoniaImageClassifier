@@ -32,15 +32,55 @@ Windows:
 ```
 <install_command>
 ```
-## Using <project_name>
+## Getting Started Using <project_name>
 
 To use <project_name>, follow these steps:
 
-```
-<usage_example>
-```
+1. Clone this repo (for help see this [tutorial](https://help.github.com/articles/cloning-a-repository/)).
+2. Raw Data is being kept [here](Repo folder containing raw data) within this repo.
 
-Add run commands and examples you think users will find useful. Provide an options reference for bonus points!
+    *If using offline data mention that and how they may obtain the data from the froup)*
+    
+3. Data processing/transformation scripts are being kept [here](Repo folder containing data processing scripts/notebooks)
+4. etc...
+
+*If your project is well underway and setup is fairly complicated (ie. requires installation of many packages) create another "setup.md" file and link to it here*  
+
+5. Follow setup [instructions](Link to file)
+
+### Methods Used
+* Inferential Statistics
+* Machine Learning
+* Data Visualization
+* Predictive Modeling
+* etc.
+
+### Technologies
+* R 
+* Python
+* D3
+* PostGres, MySql
+* Pandas, jupyter
+* HTML
+* JavaScript
+* etc. 
+
+## Project Description
+(Provide more detailed overview of the project.  Talk a bit about your data sources and what questions and hypothesis you are exploring. What specific data analysis/visualization and modelling work are you using to solve the problem? What blockers and challenges are you facing?  Feel free to number or bullet point things here)
+
+## Needs of this project
+
+- frontend developers
+- data exploration/descriptive statistics
+- data processing/cleaning
+- statistical modeling
+- writeup/reporting
+- etc. (be as specific as possible)
+
+## Featured Notebooks/Analysis/Deliverables
+* [Notebook/Markdown/Slide Deck Title](link)
+* [Notebook/Markdown/Slide DeckTitle](link)
+* [Blog Post](link)
 
 ## Contributing to <project_name>
 <!--- If your README is long or you have some specific process or steps you want contributors to follow, consider creating a separate CONTRIBUTING.md file--->
@@ -54,21 +94,6 @@ To contribute to <project_name>, follow these steps:
 
 Alternatively see the GitHub documentation on [creating a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 
-## Contributors
-
-Thanks to the following people who have contributed to this project:
-
-* [@scottydocs](https://github.com/scottydocs) 📖
-* [@cainwatson](https://github.com/cainwatson) 🐛
-* [@calchuchesta](https://github.com/calchuchesta) 🐛
-
-You might want to consider using something like the [All Contributors](https://github.com/all-contributors/all-contributors) specification and its [emoji key](https://allcontributors.org/docs/en/emoji-key).
-
 ## Contact
 
-If you want to contact me you can reach me at <your_email@address.com>.
-
-## License
-<!--- If you're not sure which open license to use see https://choosealicense.com/--->
-
-This project uses the following license: [<license_name>](<link>).
+If you want to contact me you can reach me at <jencmhep@gmail.com>.
