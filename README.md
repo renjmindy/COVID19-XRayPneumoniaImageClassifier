@@ -1,9 +1,12 @@
 # Diagnosis of COVID-19 alike Viral Pneumonia: 
 ## Building CNN from Scratch for Pneumonia Diagnosis by Classifying Chest X-Ray Images
 
-![simpsonXray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/maxresdefault1.jpg)
+![Xray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/Sample-X-ray-images-of-normal-viral-bacterial-and-COVID-19-caused-pneumonia-patients.png)
 
+<!---
+![simpsonXray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/maxresdefault1.jpg)
 ![simpsonXray](https://github.com/renjmindy/COVID19-XRayPneumoniaClassifier/blob/master/images/maxresdefault2.jpg)
+--->
 
 ## Motivation
 
