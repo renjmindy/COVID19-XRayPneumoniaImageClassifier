@@ -9,7 +9,7 @@ from GenUtil import *
 import random
 
 class GenIMG(data_utils.Sequence):
-  def __init__(self, df, batch_size=16, sub='train', shuffle=True, info={}, width=80, height=80, VGG=False):
+  def __init__(self, df, batch_size=16, sub='train', shuffle=True, info={}, W=80, H=80, VGG=False):
 
     super().__init__()
     self.df = df
@@ -17,8 +17,8 @@ class GenIMG(data_utils.Sequence):
     self.sub = sub
     self.shuffle = shuffle
     self.info = info
-    self.width = width 
-    self.height = height
+    self.W = W 
+    self.H = H
     self.VGG = VGG
     self.end()
 
@@ -31,8 +31,8 @@ class GenIMG(data_utils.Sequence):
 
   def __retrieve__(self, index):
 
-    X = np.empty((2 * self.batch_size, 1, self.height, self.width, 3), dtype=np.float32)
-    indexes = self.indexes[index*self.batch_size:(index+1)*self.batch_size]
+    X = np.empty((2 * self.batch_size, 1, self.H, self.W, 3), dtype = np.float32)
+    indexes = self.indexes[index * self.batch_size:(index + 1) * self.batch_size]
     images = self.df.iloc[indexes]
 
     shuffle_c1 = np.arange(self.batch_size)
@@ -46,8 +46,8 @@ class GenIMG(data_utils.Sequence):
       random.shuffle(np.arange(self.batch_size))
       random.shuffle(np.arange(self.batch_size))
 
-      labels_c1 = np.zeros((self.batch_size, 2*self.batch_size))
-      labels_c2 = np.zeros((self.batch_size, 2*self.batch_size))
+      labels_c1 = np.zeros((self.batch_size, 2 * self.batch_size))
+      labels_c2 = np.zeros((self.batch_size, 2 * self.batch_size))
       
       for i, j in enumerate(images.iterrows()):
         
