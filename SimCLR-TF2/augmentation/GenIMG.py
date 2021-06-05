@@ -31,7 +31,7 @@ class GenIMG(data_utils.Sequence):
 
   def __retrieve__(self, index):
 
-    X = np.empty((2 * self.batch_size, 1, self.H, self.W, 3), dtype = np.float32)
+    X = np.empty((2 * self.batch_size, 1, self.H, self.W, 3), dtype=np.float32)
     indexes = self.indexes[index * self.batch_size:(index + 1) * self.batch_size]
     images = self.df.iloc[indexes]
 
@@ -55,8 +55,8 @@ class GenIMG(data_utils.Sequence):
         self.info[index * self.batch_sieze + 1] = fn
         img = cv.cvtColor(cv.imread(fn), cv.COLOR_BGR2RGB)
         img = tf.convert_to_tensor(np.array((img/255))).astype('float32')
-        img_T1 = preprocess_for_train(img, self.height, self.width, color_distort=True, crop=False, flip=False, blur=False)
-        img_T2 = preprocess_for_train(img, self.height, self.width, color_distort=True, crop=False, flip=False, blur=False)
+        img_T1 = preprocess_for_train(img, self.H, self.W, color_distort=True, crop=False, flip=False, blur=False)
+        img_T2 = preprocess_for_train(img, self.H, self.W, color_distort=True, crop=False, flip=False, blur=False)
 
         if self.VGG:
           img_T1 = tf.dtypes.cast(img_T1 * 255, tf.int32)
@@ -65,7 +65,7 @@ class GenIMG(data_utils.Sequence):
           img_T2 = preprocess_input(np.asarray(img_T2))
 
         X[shuffle_c1[i]] = img_T1
-        X[self.batch_size+shuffle_c2[i]] = img_T2
+        X[self.batch_size + shuffle_c2[i]] = img_T2
 
         labels_c1[shuffle_c1[i], shuffle_c2[i]] = 1
         labels_c2[shuffle_c2[i], shuffle_c1[i]] = 1
