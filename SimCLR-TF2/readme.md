@@ -13,7 +13,7 @@ train labeled input | train unlabeled input | train labeled input | train unlabe
 predict labeled input | no predictions | predict unlabeled input | predict unlabeled input
 test labeled input | no testing | test labeled input | test unlabeled input
 regression | clustering, market segmentation | look-alike segmentation | regression, image segmentation
-binary or multiple classification | association | binary classification | binary or multiple classification
+binary or multiple classification | grouping, association, dim. reduction | binary classification | binary or multiple classification
 
 
 ## Requirements:
