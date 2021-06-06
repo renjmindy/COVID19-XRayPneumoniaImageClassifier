@@ -4,7 +4,7 @@
 :----------------------------:|:------------------------------:
 ![Fig2](./imgs/demo_simclr_1.png) | ![Fig2](./imgs/demo_simclr_2.gif)
 
-## Differences among Supervised, Unsupervised, Semi-supervised and Self-supervised
+## Differences among Supervised, Unsupervised, Semi-supervised and Self-supervised Learnings
 
   Supervised | Unsupervised | Semi-supervised | Self-supervised 
 :-----------:|:------------:|:---------------:|:---------------:
@@ -17,7 +17,7 @@ binary or multiple classification | grouping, association, dim. reduction | bina
 
 ## What's the contrastive learning? 
 
-Contrastive learning attemps to teach machines how to differentiate similar objusts from dissimilar ones without the need of manual annotation. 
+Contrastive learning attemps to teach machines how to differentiate similar objusts from dissimilar ones without the need of manual annotation (aka: supervised learning). 
 
   Fig. 3                     |   Fig. 4
 :----------------------------:|:------------------------------:
