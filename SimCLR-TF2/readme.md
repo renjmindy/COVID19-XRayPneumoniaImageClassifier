@@ -60,7 +60,7 @@ With the rules of contrast learning, SimCLR provides a model that learns represe
 
 ![Fig8](./imgs/demo_simclr_8.gif)
 
-## Principles of SimCLR [paper](https://arxiv.org/abs/2002.05709)
+## Principles of SimCLR [research paper (Chen et. al)](https://arxiv.org/abs/2002.05709)
 
 ![Fig7](./imgs/demo_simclr_7.png)
 
