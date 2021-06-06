@@ -19,7 +19,7 @@ binary or multiple classification | grouping, association, dim. reduction | bina
 
   Fig. 3                     |   Fig. 4
 :----------------------------:|:------------------------------:
-![Fig3](./imgs/demo_simclr_4.png) | ![Fig4](./imgs/demo_simclr_3.gif)
+![Fig3](./imgs/demo_simclr_4.png) | ![Fig4](./imgs/demo_simclr_3.png)
 
 ## Requirements:
   
