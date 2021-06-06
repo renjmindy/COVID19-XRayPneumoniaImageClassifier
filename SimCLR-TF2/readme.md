@@ -1,4 +1,4 @@
-# Constrastive Self-supervised Algorithm Implementation and Asso. Applications 
+# Contrastive Self-supervised Algorithm Implementation and Asso. Applications 
 
    Fig. 1                     |   Fig. 2
 :----------------------------:|:------------------------------:
