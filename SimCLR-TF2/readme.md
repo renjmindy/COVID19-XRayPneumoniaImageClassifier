@@ -68,9 +68,13 @@ Suppose we have a training corpus of millions of unlabeled images.
 
 ### Data Augmentation
 
-First, we generate batches of 8,192 raw images. 
+First, we generate batches of 8,192 raw images. We perform any combination of the following augmentations randomly: `crop (or resize), flip, color distortion (or jitter), grayscale`. We do this twice per image in our batch. Thus, for a batch size of 2, we get 2 * N (N=2) = 2 * 2 = 4 total images.
+
+![Fig11](./imgs/demo_simclr_11.png)
 
 ### Base Encoder
+
+
 
 ### Projection Head
 
