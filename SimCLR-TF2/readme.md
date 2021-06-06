@@ -1,4 +1,4 @@
-# Implementation of Contrastive Learning from A Simple Self-supervised Algorithm 
+# Implementation of A Simple Self-supervised Algorithm for Contrastive Learning in Visual Representations 
 
    Fig. 1                     |   Fig. 2
 :----------------------------:|:------------------------------:
