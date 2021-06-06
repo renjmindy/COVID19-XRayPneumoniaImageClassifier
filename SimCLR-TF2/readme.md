@@ -12,8 +12,8 @@ pure (1) | pure (2) | hybrid of (1) and (2) | sub of (2)
 train labeled input | train unlabeled input | train labeled input | train unlabeled input
 predict labeled input | no predictions | predict unlabeled input | predict unlabeled input
 test labeled input | no testing | test labeled input | test unlabeled input
-regression | clustering | binary classification | segmentation
-binary or multiple classification | association | binary or multiple classification
+regression | clustering, market segmentation | look-alike segmentation | regression, image segmentation
+binary or multiple classification | association | binary classification | binary or multiple classification
 
 
 ## Requirements:
