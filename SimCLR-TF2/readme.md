@@ -64,6 +64,19 @@ With the rules of contrast learning, SimCLR provides a model that learns represe
 
 ![Fig7](./imgs/demo_simclr_7.png)
 
+Suppose we have a training corpus of millions of unlabeled images.
+
+### Data Augmentation
+
+### Base Encoder
+
+### Projection Head
+
+### Contrastive Loss Function
+
+### Improving performance
+
+
 ## Requirements:
   
   * jupyterlab==2.0.1
