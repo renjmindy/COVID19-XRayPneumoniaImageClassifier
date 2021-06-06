@@ -8,7 +8,7 @@
 
   Supervised | Unsupervised | Semi-supervised | Self-supervised 
 :-----------:|:------------:|:---------------:|:---------------:
-pure (1) | pure (2) | hybrid of (1) and (2) | sub of (2)
+pure (type-1) | pure (type-2) | hybrid of (type-1) and (type-2) | subset of (type-2)
 train labeled input | train unlabeled input | train labeled input | train unlabeled input
 predict labeled input | no predictions | predict unlabeled input | predict unlabeled input
 test labeled input | no testing | test labeled input | test unlabeled input
