@@ -1,6 +1,6 @@
-                                  |
-:--------------------------------:|:--------------------------------:
-![img1](./imgs/demo_simclr_1.png) | ![img2](./imgs/demo_simclr_2.gif)
+   Fig. 1                     |   Fig. 2
+:----------------------------:|:------------------------------:
+![](./imgs/demo_simclr_1.png) | ![](./imgs/demo_simclr_2.gif)
 
 Requirements:
   
