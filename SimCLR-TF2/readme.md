@@ -1,4 +1,4 @@
-# Contrastive Self-supervised Algorithm Implementation and Asso. Applications 
+# Implementation of Contrastive Learning from A Simple Self-supervised Algorithm 
 
    Fig. 1                     |   Fig. 2
 :----------------------------:|:------------------------------:
