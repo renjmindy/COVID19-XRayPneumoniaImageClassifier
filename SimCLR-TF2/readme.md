@@ -19,13 +19,25 @@ test labeled input | no testing | test labeled input | test unlabeled input
 regression | clustering, market segmentation | look-alike segmentation | regression, image segmentation
 binary or multiple classification | grouping, association, dim. reduction | binary classification | binary or multiple classification
 
-## Comparison of Advantages and Disadvantages
+## Comparison of Advantages and Disadvantages in Self-supervised Learning 
 
 Merits           | Shortages
 :---------------:|:----------------------:
 scalability | intensity 
 capability | inaccuracy
 human-alike | irreproducity
+
+## Applications in Self-supervised Learning
+
+* Healthcare
+* Autonomous driving
+* Chatbots
+* Injury and illness prevention
+* Climate change
+* Vaccine development
+* Behavior science
+
+![Fig10](./imgs/demo_simclr_10.png)
 
 ## What's the contrastive learning? 
 
@@ -43,6 +55,8 @@ First thing, our machine turns each input into a representation. Afterward, the 
 ![Fig5](./imgs/demo_simclr_5.png) | ![Fig4](./imgs/demo_simclr_6.png)
 
 ## What's the SIMple framework for Contrastive Learning of visual Representation (SimCLR)? 
+
+
 
 ![Fig8](./imgs/demo_simclr_8.gif)
 
