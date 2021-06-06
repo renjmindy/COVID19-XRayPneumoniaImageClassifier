@@ -2,7 +2,7 @@
 
    Fig. 1                     |   Fig. 2
 :----------------------------:|:------------------------------:
-![](./imgs/demo_simclr_1.png) | ![](./imgs/demo_simclr_2.gif)
+![Fig2](./imgs/demo_simclr_1.png) | ![Fig2](./imgs/demo_simclr_2.gif)
 
 ## Differences among Supervised, Unsupervised, Semi-supervised and Self-supervised
 
@@ -15,6 +15,11 @@ test labeled input | no testing | test labeled input | test unlabeled input
 regression | clustering, market segmentation | look-alike segmentation | regression, image segmentation
 binary or multiple classification | grouping, association, dim. reduction | binary classification | binary or multiple classification
 
+## What's the contrastive learning? 
+
+  Fig. 3                     |   Fig. 4
+:----------------------------:|:------------------------------:
+![Fig3](./imgs/demo_simclr_4.png) | ![Fig4](./imgs/demo_simclr_3.gif)
 
 ## Requirements:
   
