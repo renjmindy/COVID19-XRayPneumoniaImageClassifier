@@ -17,11 +17,18 @@ binary or multiple classification | grouping, association, dim. reduction | bina
 
 ## What's the contrastive learning? 
 
-Contrastive learning attemps to teach machines how to differentiate similar objusts from dissimilar ones. 
+Contrastive learning attemps to teach machines how to differentiate similar objusts from dissimilar ones without the need of manual annotation. 
 
   Fig. 3                     |   Fig. 4
 :----------------------------:|:------------------------------:
 ![Fig3](./imgs/demo_simclr_4.png) | ![Fig4](./imgs/demo_simclr_3.png)
+
+
+First thing, our machine turns each input into a representation. Afterward, the similarity between a pair of representations is computed. 
+
+ Fig. 5                     |   Fig. 6
+:----------------------------:|:------------------------------:
+![Fig5](./imgs/demo_simclr_5.png) | ![Fig4](./imgs/demo_simclr_6.png)
 
 ## Requirements:
   
