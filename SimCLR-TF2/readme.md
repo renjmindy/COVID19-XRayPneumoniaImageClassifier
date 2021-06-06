@@ -1,4 +1,4 @@
-[img1](./imgs/demo_simclr_1.png)
+![img1](./imgs/demo_simclr_1.png)
 
 Requirements:
   
