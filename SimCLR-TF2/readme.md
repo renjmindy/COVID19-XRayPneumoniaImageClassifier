@@ -8,8 +8,9 @@
 
   Supervised | Unsupervised | Semi-supervised | Self-supervised 
 :-----------:|:------------:|:---------------:|:---------------:
-train labeled input | unlabeled input | labeled input | 
-predict labeled input | no output | predict unlabeled input | 
+train labeled input | train unlabeled input | train labeled input | 
+predict labeled input | no predictions | predict unlabeled input | 
+test labeled input | no testing | test labeled input |
 regression, classification | clustering, association | classification |
 
 
