@@ -1,6 +1,8 @@
 # Implementation of A Simple Self-supervised Algorithm for Contrastive Learning in Visual Representations 
 
-Getting AI to learn like a new-born baby is the goal of self-supervised learning. Scientists are working on creating better AI that learns through self-supervision, with the pinnacle being AI that could learn like a baby, based on observation of its environment and interaction with people. This would be an important advance because AI has limitations based on the volume of data required to train machine learning algorithms (**scalability**), and the brittleness of the algorithms when it comes to adjusting to changing circumstances (**Improved AI capabilities**). Some early success with self-supervised learning has been seen in the natural language processing used in mobile phones, smart speakers, and customer service bots. Training AI today is time-consuming and expensive. The promise of self-supervised learning is for AI to train itself without the need for external labels attached to the data and human intervention, enabling machines to come up with a solution without any interference (**Understanding how the human mind works**). As we understand this better, we will get closer to create models that think more similar to humans.
+## Motivations
+
+Getting AI to learn like a new-born baby is the goal of self-supervised learning. Scientists are working on creating better AI that learns through self-supervision, with the pinnacle being AI that could learn like a baby, based on observation of its environment and interaction with people. This would be an important advance because AI has limitations based on the volume of data required to train machine learning algorithms (**scalability**), and the brittleness of the algorithms when it comes to adjusting to changing circumstances (**Improved AI capabilities**). Some early success with self-supervised learning has been seen in the natural language processing used in mobile phones, smart speakers, and customer service bots. Training AI today is time-consuming and expensive. The promise of self-supervised learning is for AI to train itself without the need of external labels attached to the data in which human intervention and supervision are both involved. In other words, the self-supervised learning aims to further enable machines to come up with a solution automatically - completely relying on their own capabilities without any interference (**Understanding how the human mind works**). As we understand this self-learning process better, we will be able to get closer to create models that think more similar to humans. 
 
    Fig. 1                     |   Fig. 2
 :----------------------------:|:------------------------------:
@@ -17,9 +19,17 @@ test labeled input | no testing | test labeled input | test unlabeled input
 regression | clustering, market segmentation | look-alike segmentation | regression, image segmentation
 binary or multiple classification | grouping, association, dim. reduction | binary classification | binary or multiple classification
 
+## Comparison of Advantages and Disadvantages
+
+Merits           | Shortages
+:---------------:|:----------------------:
+scalability | intensity 
+capability | inaccuracy
+human-alike | irreproducity
+
 ## What's the contrastive learning? 
 
-Contrastive learning attemps to teach machines how to differentiate similar objusts from dissimilar ones without the need of manual annotation (aka: supervised learning). In brief, it's an approach toward learning without labels. 
+Contrastive learning is a self-supervised, task-independent deep learning technique that allows a model to learn about data, even without labels. Contrastive learning attemps to teach machines how to differentiate similar objusts from dissimilar ones without the need of manual annotation (aka: human supervision as required in supervised learning). In brief, it's an approach toward learning data without labels. SimCLR is an example of a contrastive learning approach that learns how to represent images such that similar images have similar representations, thereby allowing the model to learn how to distinguish between images. The pre-trained model with a general understanding of the data can be fine-tuned for a specific task such as image classification when labels are scarce to significantly improve label efficiency, and potentially surpass supervised methods. 
 
   Fig. 3                     |   Fig. 4
 :----------------------------:|:------------------------------:
@@ -32,7 +42,7 @@ First thing, our machine turns each input into a representation. Afterward, the 
 :----------------------------:|:------------------------------:
 ![Fig5](./imgs/demo_simclr_5.png) | ![Fig4](./imgs/demo_simclr_6.png)
 
-## What's the SIMple framework for Contrastive Learning of visual Representation? 
+## What's the SIMple framework for Contrastive Learning of visual Representation (SimCLR)? 
 
 ![Fig8](./imgs/demo_simclr_8.gif)
 
