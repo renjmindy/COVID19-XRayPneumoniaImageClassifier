@@ -56,9 +56,13 @@ First thing, our machine turns each input into a representation. Afterward, the 
 
 ## What's the SIMple framework for Contrastive Learning of visual Representation (SimCLR)? 
 
-
+With the rules of contrast learning, SimCLR provides a model that learns representations by maximizing the agreement between randomly transformed views of the same data sample through minimizing the contrast loss in the latent space.
 
 ![Fig8](./imgs/demo_simclr_8.gif)
+
+## Principles of SimCLR
+
+![Fig7](./imgs/demo_simclr_7.png)
 
 ## Requirements:
   
