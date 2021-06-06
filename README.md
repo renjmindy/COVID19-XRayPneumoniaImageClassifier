@@ -56,9 +56,9 @@ To speed up image pre-processing, 1024x1024 images were downsized to be either 1
 
 | Data                  | Normal    | Pneumonia    | Sum      |
 | :------------------:  | :------:  | :------:     | :------: | 
-| Training Set          |           |              |   4685   |               
-| Testing Set           |           |              |    585   |                          
-| Validating Set        |           |              |    585   |  
+| Training Set          | 1267      |  3418        |   4685   |               
+| Testing Set           |  160      |   428        |    588   |                          
+| Validating Set        |  159      |   426        |    585   |  
 
 ## Loading Models for Visualizing Intermediate Activations of every Deep Learning Model
 
