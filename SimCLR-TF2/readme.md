@@ -60,13 +60,15 @@ With the rules of contrast learning, SimCLR provides a model that learns represe
 
 ![Fig8](./imgs/demo_simclr_8.gif)
 
-## Principles of SimCLR
+## Principles of SimCLR [paper](https://arxiv.org/abs/2002.05709)
 
 ![Fig7](./imgs/demo_simclr_7.png)
 
 Suppose we have a training corpus of millions of unlabeled images.
 
 ### Data Augmentation
+
+First, we generate batches of 8,192 raw images. 
 
 ### Base Encoder
 
