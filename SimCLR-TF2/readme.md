@@ -1,8 +1,10 @@
+# Constrastive Self-supervised Algorithm Implementation and Applications 
+
    Fig. 1                     |   Fig. 2
 :----------------------------:|:------------------------------:
 ![](./imgs/demo_simclr_1.png) | ![](./imgs/demo_simclr_2.gif)
 
-# Differences among Supervised, Unsupervised, Semi-supervised and Self-supervised
+## Differences among Supervised, Unsupervised, Semi-supervised and Self-supervised
 
   Supervised | Unsupervised | Semi-supervised | Self-supervised 
 :-----------:|:------------:|:---------------:|:---------------:
@@ -11,7 +13,7 @@ labeled predictions | no output | unlabeled predictions |
 regression, classification w/ known patterns | clustering w/ unknown patterns | w/ weakly known patterns  |
 
 
-# Requirements:
+## Requirements:
   
   * jupyterlab==2.0.1
   * Keras==2.3.1
