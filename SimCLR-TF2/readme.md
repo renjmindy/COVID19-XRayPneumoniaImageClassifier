@@ -6,8 +6,9 @@
 
   Supervised | Unsupervised | Semi-supervised | Self-supervised 
 :-----------:|:------------:|:---------------:|:---------------:
-trained w/ labeled data as input | unlabeled input | labeled | 
-regression, classification w/ known patterns | clustering w/ unknown patterns |   |
+trained w/ labeled input | unlabeled input | labeled input | 
+labeled predictions | no output | unlabeled predictions | 
+regression, classification w/ known patterns | clustering w/ unknown patterns | w/ weakly known patterns  |
 
 
 # Requirements:
