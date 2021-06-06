@@ -80,6 +80,8 @@ We then use our DNN as baseline behaving as an encoder, h = f(x), to extract vec
 
 ### Projection Head
 
+
+
 ### Contrastive Loss Function
 
 ### Improving performance
