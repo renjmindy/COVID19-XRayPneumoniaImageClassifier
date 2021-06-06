@@ -39,12 +39,12 @@ class GenIMG(data_utils.Sequence):
     shuffle_c2 = np.arange(self.batch_size)   
 
     if self.sub == 'train':
-      random.shuffle(np.arange(self.batch_size))
-      random.shuffle(np.arange(self.batch_size))
+      random.shuffle(shuffle_c1)
+      random.shuffle(shuffle_c2)
     else:
       random.seed(42)
-      random.shuffle(np.arange(self.batch_size))
-      random.shuffle(np.arange(self.batch_size))
+      random.shuffle(shuffle_c1)
+      random.shuffle(shuffle_c2)
 
       labels_c1 = np.zeros((self.batch_size, 2 * self.batch_size))
       labels_c2 = np.zeros((self.batch_size, 2 * self.batch_size))
