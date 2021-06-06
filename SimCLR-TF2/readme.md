@@ -1,3 +1,5 @@
+
+:--------------------------------:|:--------------------------------:
 ![img1](./imgs/demo_simclr_1.png) | ![img2](./imgs/demo_simclr_2.gif)
 
 Requirements:
