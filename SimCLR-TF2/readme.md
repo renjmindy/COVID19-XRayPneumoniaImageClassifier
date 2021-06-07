@@ -80,7 +80,9 @@ We then use our DNN as baseline behaving as an encoder, h = f(x), to extract vec
 
 ### Projection Head
 
-The representations h_{i} and h_{j} of the two augmented images are then passed through a series of non-linear `Dense -> Relu -> Dense` layers to apply non-linear transformation and project it into a representation z_{i} and z_{j}. This is denoted by g(.) in the paper and called projection head.
+The output of the CNN is then inputted to a set of Dense Layers called the projection head, z = g(h) to transform the data into another space. The representations h_{i} and h_{j} of the two augmented images are then passed through a series of non-linear `Dense -> Relu -> Dense` layers to apply non-linear transformation and project it into a representation z_{i} and z_{j}. This is denoted by g(.) in the paper and called projection head. This extra step is empirically shown to improve performance. This component maps representations of the space in which contrastive loss is applied.
+
+![Fig13](./imgs/demo_simclr_13.png)
 
 ### Contrastive Loss Function
 
