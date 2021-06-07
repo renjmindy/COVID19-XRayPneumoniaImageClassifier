@@ -86,8 +86,8 @@ class SimCLS:
     classification = self.dataclassifier()
     checkpoint, earlystopping, reduce_lr = self.dataregulaizer(frac)
 
-    for i, (uf, lr, ep) in enumerate(zip(num_of_unfrozen_layers, lrs, epoches)):
-      self.datadefreezer(uf)
+    for i, (num_of_unfrozen_layers, lr, ep) in enumerate(zip(num_of_unfrozen_layers, lrs, epoches)):
+      self.datadefreezer(num_of_unfrozen_layers)
       classification = self.dataclassifier
       K.set_value(classification.optimizer.learning_rate, lr)
 
@@ -96,7 +96,7 @@ class SimCLS:
                                    #callbacks=[earlystopping, checkpoint, reduce_lr])
 
       if verbose_cycle:
-         print(f"CYCLE {i}: num_of_unfrozen_layers: {uf}" + f" - epochs: {ep} - lr: {lr:.1e}", end=" | ")
+         print(f"CYCLE {i}: num_of_unfrozen_layers: {num_of_unfrozen_layers}" + f" - epochs: {ep} - lr: {lr:.1e}", end=" | ")
          print(f"Training Loss at end of cycle: {history.history['loss'][-1]:.2f}" + 
                f"- Training Acc: {np.max(history.history['categorical_accuracy']):.2f}" + 
                f"- Validation Acc: {np.max(history.history['val_categorical_accuracy']):.2f}")
