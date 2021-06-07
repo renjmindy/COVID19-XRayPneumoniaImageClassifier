@@ -86,7 +86,18 @@ The output of the CNN is then inputted to a set of Dense Layers called the proje
 
 ### Contrastive Loss Function
 
+Thus, for each augmented image in the batch, we get embedding vectors z_{i}, z_{j}, z{k}, z{l}. From these embedding, we calculate the loss in following steps:
+
 #### Calculation of Cosine Similarity
+
+The similarity between two augmented versions of an image is calculated using cosine similarity. For two augmented images x_{i} and x_{j}, the cosine similarity is calculated on its projected representations z_{i} and z_{j}.
+
+![Fig14](./imgs/demo_simclr_14.png)
+
+, where:
+
+* τ is the adjustable temperature parameter. It can scale the inputs and widen the range [-1, 1] of cosine similarity
+* ∥z_{i}∥ is the norm of the vector.
 
 #### Loss Calculation
 
