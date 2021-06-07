@@ -81,7 +81,7 @@ class GenClassifier:
       print(f'non-trainable counts (1): {round(no_nontrainable/1e6, 2)} M.')
       print(f'non-trainable counts (2): {len(self.classification.non_trainable_weights)}')
 
-  def modelfitter(self, train_datagen, val_datagen, test_datagen, frac, num_of_unfrozen_layers, lrs, epoches, 
+  def modeltrainer(self, train_datagen, val_datagen, test_datagen, frac, num_of_unfrozen_layers, lrs, epoches, 
                   verbose_epoches=0, verbose_cycles=1):
     classification = self.dataclassifier()
     checkpoint, earlystopping, reduce_lr = self.dataregulaizer(frac)
