@@ -113,6 +113,17 @@ Lastly, we wrap this value around in a -log() so that minimizing this loss funct
 
 ![Fig15](./imgs/demo_simclr_15.png)
 
+We calculate the loss for the same pair a second time as well where the positions of the images are interchanged.
+
+![Fig17](./imgs/demo_simclr_17.png)
+
+Finally, we compute loss over all the pairs in the batch of size N=2 and take an average.
+
+![Fig18](./imgs/demo_simclr_18.png)
+
+Based on the loss, the encoder and projection head representations improves over time and the representations obtained place similar images closer in the space.
+
+
 ### Improving performance
 
 
