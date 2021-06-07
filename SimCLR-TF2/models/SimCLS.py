@@ -25,7 +25,7 @@ import numpy as np
 import GenCLS import GenClassifier as datagen
 from swish import swish
 
-class SimCLS:
+class GenClassifier:
   def __init__(self, baseline, multi_classes, batch_size=32, lr_dense=.005, lr_class=.005, output='models/'):
 
     self.baseline = baseline
