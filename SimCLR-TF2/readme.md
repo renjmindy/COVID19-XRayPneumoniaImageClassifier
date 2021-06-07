@@ -74,13 +74,13 @@ First, we generate batches of 8,192 raw images. We perform any combination of th
 
 ### Base Encoder
 
-We then use our DNN as baseline behaving as an encoder, h = f(x), to extract vector representations from augmented images (`x`). The encoder used is generic and replaceable with other architectures such as [ResNet-50](https://arxiv.org/abs/1512.03385), VGG-16, VGG-19 and so on. ResNet-50 architecture is selected as the ConvNet encoder. The output is a 2048-dimensional vector h, which is commonly shared by each positive pair of two augmented images.
+We then use our DNN as baseline behaving as an encoder, h = f(x), to extract vector representations from augmented images (`x`). The encoder used is generic and replaceable with other architectures such as [ResNet-50](https://arxiv.org/abs/1512.03385), VGG-16, VGG-19 and so on. ResNet-50 architecture is selected as the ConvNet encoder. The output is a 2048-dimensional vector h, which is commonly shared by each positive pair of two augmented images. By compressing our images into a latent space representation, the model is able to learn the high-level features of the images.
 
 ![Fig12](./imgs/demo_simclr_12.png)
 
 ### Projection Head
 
-
+The representations h_{i} and h_{j} of the two augmented images are then passed through a series of non-linear `Dense -> Relu -> Dense` layers to apply non-linear transformation and project it into a representation z_{i} and z_{j}. This is denoted by g(.) in the paper and called projection head.
 
 ### Contrastive Loss Function
 
