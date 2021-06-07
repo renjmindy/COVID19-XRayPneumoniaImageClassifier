@@ -90,7 +90,7 @@ Thus, for each augmented image in the batch, we get embedding vectors z_{i}, z_{
 
 #### Calculation of Cosine Similarity
 
-The similarity between two augmented versions of an image is calculated using cosine similarity. For two augmented images x_{i} and x_{j}, the cosine similarity is calculated on its projected representations z_{i} and z_{j}.
+Since we are comparing two vectors, a natural choice is cosine similarity, which is based on the angle between the two vectors in space. The similarity between two augmented versions of an image is calculated using cosine similarity. For two augmented images x_{i} and x_{j}, the cosine similarity is calculated on its projected representations z_{i} and z_{j}. It is logical that when vectors are closer (smaller angle between them) together in space, they are more similar. Thus, if we take the cosine(angle between the two vectors) as a metric, we will get a high similarity when the angle is close to 0, and a low similarity otherwise, which is exactly what we want.
 
 ![Fig14](./imgs/demo_simclr_14.png)
 
@@ -101,7 +101,17 @@ The similarity between two augmented versions of an image is calculated using co
 
 #### Loss Calculation
 
+We also need a loss function that we can minimize. SimCLR uses a contrastive loss called “NT-Xent loss” (Normalized Temperature-Scaled Cross-Entropy Loss). We first apply the softmax function to compute the probability that the two augmented images are similar. Notice that the denominator is the sum of e^similarity(all pairs, including negative pairs). Negative pairs are obtained by creating pairs between our augmented images, and all of the other images in our batch. 
+
 ![Fig9](./imgs/demo_simclr_9.png)
+
+This softmax calculation is equivalent to getting the probability of the second augmented cat image being the most similar to the first cat image in the pair. Here, all remaining images in the batch are sampled as a dissimilar image (negative pair). 
+
+![Fig16](./imgs/demo_simclr_16.png)
+
+Lastly, we wrap this value around in a -log() so that minimizing this loss function corresponds to maximizing the probability that the two augmented images are similar.
+
+![Fig15](./imgs/demo_simclr_15.png)
 
 ### Improving performance
 
