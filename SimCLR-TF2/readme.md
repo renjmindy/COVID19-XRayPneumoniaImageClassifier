@@ -6,7 +6,7 @@ Getting AI to learn like a new-born baby is the goal of self-supervised learning
 
    Fig. 1                     |   Fig. 2
 :----------------------------:|:------------------------------:
-![Fig2](./imgs/demo_simclr_1.png) | ![Fig2](./imgs/demo_simclr_2.gif)
+![Fig1](./imgs/demo_simclr_1.png) | ![Fig2](./imgs/demo_simclr_2.gif)
 
 ## Differences among Supervised, Unsupervised, Semi-supervised and Self-supervised Learnings
 
@@ -52,7 +52,7 @@ First thing, our machine turns each input into a representation. Afterward, the 
 
  Fig. 5                     |   Fig. 6
 :----------------------------:|:------------------------------:
-![Fig5](./imgs/demo_simclr_5.png) | ![Fig4](./imgs/demo_simclr_6.png)
+![Fig5](./imgs/demo_simclr_5.png) | ![Fig6](./imgs/demo_simclr_6.png)
 
 ## What's the SIMple framework for Contrastive Learning of visual Representation (SimCLR)? 
 
@@ -85,6 +85,12 @@ The output of the CNN is then inputted to a set of Dense Layers called the proje
 ![Fig13](./imgs/demo_simclr_13.png)
 
 ### Contrastive Loss Function
+
+#### Calculation of Cosine Similarity
+
+#### Loss Calculation
+
+![Fig9](./imgs/demo_simclr_9.png)
 
 ### Improving performance
 
