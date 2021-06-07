@@ -4,7 +4,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.applications.vgg19 import preprocess_input
 from tensorflow.python.keras.utils import data_utils
 
-class GenClassifier(data_utils.Sequence):
+class GenImgs(data_utils.Sequence):
   def __init__(self, df, batch_size=16, sub='train', shuffle=True, prep=None, info={}, maxW=80, maxH=80, multi_classes=5, 
                VGG=True, aug=None):
     
