@@ -13,7 +13,7 @@ from keras.models import load_model
 from keras.wrappers.scikit_learn import KerasRegressor
 
 import tensorflow as tf
-from tensorflow.keras.regularizers import ll
+from tensorflow.keras.regularizers import l1
 from tensorflow.keras.optimizers import Adam
 from tensorflow.keras import backend as K
 from tensorflow.keras.models import Sequential, Model
