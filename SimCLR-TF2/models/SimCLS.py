@@ -22,7 +22,7 @@ from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from tensorflow.keras.callbacks import ModelCheckpoint, EarlyStopping, ReduceLROnPlateau
 
 import numpy as np
-import GenCLS import GenClassifier as datagen
+import GenCLS import GenImgs as datagen
 from swish import swish
 
 class GenClassifier:
