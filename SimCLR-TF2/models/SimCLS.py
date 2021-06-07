@@ -26,7 +26,7 @@ import GenCLS import GenImgs as datagen
 from swish import swish
 
 class GenClassifier:
-  def __init__(self, baseline, multi_classes, batch_size=32, lr_dense=.005, lr_class=.005, output='outputs/'):
+  def __init__(self, baseline, multi_classes, batch_size=32, lr_dense=.005, lr_class=.005, output='outputs/trashnet'):
 
     self.baseline = baseline
     self.multi_classes = multi_classes
