@@ -65,14 +65,14 @@ class GenClassifier:
 
     return cp, es, lr
 
-  def datadefreezer(self, num_of_unfrozen_layers, pr=False):
+  def datadefreezer(self, num_of_unfrozen_layers, prout=False):
     for layer in range(0, len(self.classification.layers), 1):
       if layer < number_of_unfrozen_layers:
         self.classification.layers[layer].trainable = False
       else:
         self.classification.layers[layer].trainable = True
 
-    if pr:
+    if prout:
       no_trainable = count_params(self.classification.trainable_weights)
       no_nontrainable = count_params(self.classification.non_trainable_weights)
 
