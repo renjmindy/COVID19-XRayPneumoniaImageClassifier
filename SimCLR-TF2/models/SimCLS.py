@@ -81,7 +81,7 @@ class GenClassifier:
       print(f'non-trainable counts (1): {round(no_nontrainable/1e6, 2)} M.')
       print(f'non-trainable counts (2): {len(self.classification.non_trainable_weights)}')
 
-  def modeltrainer(self, train_datagen, val_datagen, test_datagen, frac, num_of_unfrozen_layers, lrs, epoches, 
+  def datatrainer(self, train_datagen, val_datagen, test_datagen, frac, num_of_unfrozen_layers, lrs, epoches, 
                   verbose_epoches=0, verbose_cycles=1):
     classification = self.dataclassifier()
     checkpoint, earlystopping, reduce_lr = self.dataregulaizer(frac)
@@ -105,7 +105,7 @@ class GenClassifier:
         print("Learning diverged, stopped.")
         break
 
-  def modeltester(self, df_test, test_datagen, class_labels):
+  def datatester(self, df_test, test_datagen, class_labels):
     predictions = self.dataclassifier.predict(test_datagen, steps=len(df_test.index))
 
     y_true_test = []
